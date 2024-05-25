@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact information</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #eee;
+    }
+    /* * {
+      border: 1px solid black;
+    } */
+    .flex {
+      display: flex;
+    }
+    .baiSe {
+      background-color: white;
+    }
+    .yinYing {
+      box-shadow: rgb(0 0 0/20%) 0px 2px 1px -1px,
+        rgb(0 0 0/14%) 0px 1px 1px 0px, rgb(0 0 0/12%) 0px 1px 3px 0px;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .mg8 {
+      margin: 8px;
+    }
+    .mgr8 {
+      margin-right: 8px;
+    }
+    .mgt8 {
+      margin-top: 8px;
+    }
+    .daohang {
+      padding: 10px 20px;
+      font-size: 14px;
+      border-bottom: 1px solid grey;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .ceBian {
+        display: none;
+      }
+      .neiRong {
+        flex-direction: column;
+      }
+      .shuJuQu {
+        flex-direction: column;
+      }
+      .youQu {
+        margin-left: 8px;
+      }
+      .shuJu {
+        margin: 0 0 8px;
+        flex: auto;
+      }
+    }
+    .neiRong::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <body class="flex">
+    <!--左侧-->
+    <div class="baiSe yinYing ceBian" style="width: 200px; z-index: 2">
+      <!--头像栏-->
+      <div
+        class="flex"
+        style="
+          padding: 10px;
+          justify-content: space-around;
+          align-items: center;
+          background-color: #96d0ff;
+          border-bottom: 1px solid #a46798;
+        "
+      >
+        <a href="index.html"
+          ><img
+            src="images/Blue.png"
+            style="width: 40px; border-radius: 50px; justify-content: center"
+            alt="The logo for Haoran Gao"
+        /></a>
+
+        <div style="align-self: center; color: #a46798">
+          <b>Harrison Gao</b>
+        </div>
+      </div>
+      <!--导航栏-->
+      <div>
+        <div class="daohang" style="height: 20px">1</div>
+        <div class="daohang" style="height: 20px">2</div>
+        <div class="daohang" style="height: 20px">3</div>
+        <div class="daohang" style="height: 20px">4</div>
+        <div class="daohang" style="height: 20px">5</div>
+        <div class="daohang" style="height: 20px">6</div>
+        <div class="daohang" style="height: 20px">7</div>
+        <div class="daohang" style="height: 20px"></div>
+        <div class="daohang" style="height: 20px"></div>
+        <div class="daohang" style="height: 20px"></div>
+        <div class="daohang" style="height: 20px"></div>
+        <div class="daohang" style="height: 20px"></div>
+      </div>
+    </div>
+    <!--右侧-->
+    <div class="flex1 flex column">
+      <!--头栏-->
+      <div style="height: 60px; z-index: 1" class="baiSe yinYing"></div>
+      <!--内容-->
+      <div style="overflow: auto" class="neiRong flex1 flex">
+        <!--左-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据-->
+          <div class="flex shuJuQu">
+            <div style="height: 100px" class="shuJu flex1 baiSe yinYing mgr8">
+              1
+            </div>
+            <div style="height: 100px" class="shuJu flex1 baiSe yinYing mgr8">
+              2
+            </div>
+            <div style="height: 100px" class="shuJu flex1 baiSe yinYing mgr8">
+              3
+            </div>
+            <div style="height: 100px" class="shuJu flex1 baiSe yinYing">4</div>
+          </div>
+
+          <!--列表区-->
+          <div class="flex column">
+            <div style="height: 160px" class="baiSe yinYing mgt8"></div>
+            <div style="height: 160px" class="baiSe yinYing mgt8"></div>
+            <div style="height: 160px" class="baiSe yinYing mgt8"></div>
+            <div style="height: 160px" class="baiSe yinYing mgt8"></div>
+            <div style="height: 160px" class="baiSe yinYing mgt8"></div>
+            <div style="height: 160px" class="baiSe yinYing mgt8"></div>
+          </div>
+        </div>
+
+        <!--右-->
+        <div style="flex: 1" class="ceBian flex column mgr8 mgt8 youQu">
+          <div style="height: 150px" class="baiSe yinYing">1</div>
+
+          <div style="height: 300px" class="baiSe yinYing mgt8">2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
